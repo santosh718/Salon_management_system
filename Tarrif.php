@@ -9,6 +9,12 @@
 <body>
     <div>
         <form action="">
+        <table>
+            
+                    <tr>
+                        <td><input type="text" name="TextName" class="button" id="TextName"></td>
+                    </tr>
+                </table>
             <table>
                     <tr>
                         <th class="th">Tarrif ID</th>
@@ -27,6 +33,30 @@
                         <td><input type="text" name="Applicaabledate" id="Applicaabledate" class="input" placeholder=""></td>
                         <td><input type="text" name="Rate" id="Rate" class="input" placeholder=""></td>
                     </tr>
+                    <tr>
+                        <th class="th">GST</th>
+                        <th class="th">Date</th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="GST" id="GST" class="input"></td>
+                        <td><input type="date" name="Date" id="Date" class="input"></td>
+                        
+                    </tr>
+                    <tr>
+                        <th class="th">Gold</th>
+                        <th class="th">Silver</th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="Gold" id="Gold" class="input"></td>
+                        <td><input type="text" name="Silver" id="Silver" class="input"></td>
+                        
+                    </tr>
+
+                    <table>
+                    <tr>
+                        <td><input type="submit" value="Submit" class="button"></td>
+                    </tr>
+                </table>
             </table>
         </form>
     </div>

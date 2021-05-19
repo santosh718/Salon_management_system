@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,11 +10,11 @@
     <link rel="stylesheet" href="style.css">
 
 <body>
-<div>
+    <div>
 		<div>
-            <?php include 'header.php'; ?>
+            
        
-    <div class="grid-container">
+        <div class="grid-container">
         <div>
             <?php //include 'testmenu.php'; ?>
         </div>
@@ -21,7 +23,7 @@
             <form action="AppointmentConnect.php" method="post">
                 <h1>Salon Appointment</h1>  
 
-                <!--<table>
+                <table>
                     <tr>
                         <th class="th">Appointment ID</th>
                         <th class="th">Date</th>
@@ -30,7 +32,7 @@
                         <td><input type="text" name="Appointmentid" id="Appointmentid" class="input"></td>
                         <td><input type="date" name="Date" id="Date" class="input"></td>
                     </tr>
-                    <tr>
+                   <!-- <tr>
                         <th class="th">Customer_ID</th>
                     </tr>
                     <tr>
@@ -49,7 +51,7 @@
                         ?>
                         </datalist>
                         </td>
-                    </tr>
+                    </tr>-->
                     <tr>
                         <th class="th">Full Name</th>
                     </tr>
@@ -67,7 +69,7 @@
                         <td><input type="tel" name="Phone" id="Phone" class="input"></td>
                         <td><input type="email" name="Email" id="Email" class="input"></td>
                     </tr>
-                </table>-->
+                </table>
                 
                 <table>
                     <tr>
@@ -107,14 +109,14 @@
                     </tr>
                     <tr>
                         <td><input type="submit" value="Submit" class="button"></td>
+
+                       
                     </tr>
                 </table>
             </form>
         </div>
     </div>
-    <div>
-        <?php include 'footer.php' ?>
-    </div>
+    
 </body>
 
 </html>

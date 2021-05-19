@@ -8,18 +8,15 @@
 </head>
 <body>
 <div>
-    <?php include 'header.php' ?>
+    
 
  </div>
-<div class="grid-container">
+<div>
        
         
 
 
-        <div>
-            <?php include 'testmenu.php' ?>
-
-        </div>
+       
         <div>
             <form action="" method="post">
                 <h1>Create Invoice</h1>
@@ -131,8 +128,6 @@
             </form>
         </div>
     </div>
-    <div>
-        <?php include 'footer.php' ?>
-    </div>
+    
 </body>
 </html>

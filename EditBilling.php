@@ -37,6 +37,34 @@
                 <tr><hr></tr>
             </table>
             <table class="table">
+            <tr>
+                        <th>
+                        <h3 class="column">Service</h3>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th class="column">Service Name</th>
+                        <th class="column">Rate</th>
+                        <th class="column">Service Amt</th>
+                        <th class="column">SGST</th>
+                        <th class="column">CGST</th>
+                        <th class="column">Total Amount</th>
+                        
+                    </tr>
+                    <tr width="">
+                        <td><input type="text" class="input4" name="Service" id="Service"></td>
+                        <td><input type="text" class="input4" name="Rate" id="Rate"></td>
+                        <td><input type="text" class="input4" name="ServiceAmt" id="ServiceAmt"></td>
+                        <td><input type="text" class="input4" name="SGST" id="SGST"></td>
+                        <td><input type="text" class="input4" name="CGST" id="CGST"></td>
+                        <td><input type="text" class="input4" name="TotalAmount" id="TotalAmount"></td>
+                        
+                    </tr>
+                    <tr>
+                        <th>
+                            <h3 class="column">Items used</h3>
+                        </th>
+                    </tr>
                 <tr>
                     
                     <th class="column">Product Name</th>
