@@ -16,7 +16,9 @@
 
         echo "<script>alert('Match User Name and Password!')</script>";
         if($_SESSION['Role']=='admin') {
-            echo "<script>window.location.href='Dashboard.php'</script>";
+            echo "<script>window.location.href='dashboard.php'</script>";
+        } else {
+            echo "<script>window.location.href='CustomerDashboard.php'</script>";
         }
     } else {
         echo "<script>alert('Don't Match UserName and Password')</script>";

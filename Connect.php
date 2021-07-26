@@ -5,4 +5,6 @@ $con = new mysqli("localhost", "santosh", "santosh", "Salon");
    die("Connection failed: " . $con->connect_error);
 }
 
- echo "Connected Successful!";
+ //echo "Connected Successful!";
+
+ 

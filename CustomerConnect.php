@@ -18,7 +18,13 @@
  VALUES ('$Customer_ID', '$Date', '$Fname', '$Lname','$Phone', '$Email', '$Age', '$Gender', '$village', '$District', '$State', '$Pincode')";
 
  if($con->query($sql)===TRUE){
-     echo "New data insert Successfully";
+     $sql = "INSERT INTO UserAccount(Name, UserName, Mobile, Email_ID, Password, Role) VALUES('$Fname','$Customer_ID','$Phone','Email','123','customer')";
+     if($con->query($sql)===TRUE)
+     {
+        echo "New data insert Successfully";
+     } else {
+         echo $con->error;
+     }
  } else {
      echo $con->error;
  }

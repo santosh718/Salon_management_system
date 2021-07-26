@@ -12,14 +12,14 @@
         if($Appointment_ID < 10)
         {
             echo $Appointment_ID = "A0000$Appointment_ID";
-
+            echo "<script>alert($Appointment_ID);</script>";
         }
     }
     else
     {
         echo $Appointment_ID = "A0000$Appointment_ID";
     }
-    
+
     $con->close();
 
 
@@ -38,9 +38,12 @@
  VALUES ('$Appointment_ID', '$Date', '$Service', '$Stylist', '$App_Date', '$App_Time', '$Comments')";
 
  if($con->query($sql)===TRUE){
-     echo "New data insert Successfully";
+     echo "<script>alert('New data insert Successfully');</script>";
+     echo "<script>alert('$Appointment_ID');</script>";
+     echo "<script>window.location.href='Appointment.php'</script>";
  } else {
      echo $con->error;
  }
+
 
  $con->close();

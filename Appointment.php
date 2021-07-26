@@ -7,7 +7,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Appointent</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="Style1.css">
+
 
 <body>
     <div>
@@ -16,7 +19,7 @@
        
         <div class="grid-container">
         <div>
-            <?php //include 'testmenu.php'; ?>
+            <?php include 'MenuBar.php'; ?>
         </div>
 
         <div>
@@ -51,7 +54,7 @@
                         ?>
                         </datalist>
                         </td>
-                    </tr>-->
+                    </tr>
                     <tr>
                         <th class="th">Full Name</th>
                     </tr>
@@ -71,7 +74,7 @@
                     </tr>
                 </table>
                 
-                <table>
+                <table>-->
                     <tr>
                         <th class="th">Select a service category</th>
                     </tr>
@@ -115,6 +118,9 @@
                 </table>
             </form>
         </div>
+    </div>
+    <div>
+        <?php include "footer.php" ?>
     </div>
     
 </body>

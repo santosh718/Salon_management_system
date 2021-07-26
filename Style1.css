@@ -1,104 +1,102 @@
-/*.body{
-    height: 800px;
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-.header{
-    margin-top: 0px;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(155, 157, 161);
+/*body
+{
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+    
+    font-family: sans-serif;
+}*/
+.menu-bar
+{
+    background: rgb(165, 170, 165);
+    text-align: left;
+}
+.menu-bar ul 
+{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
 
 }
-.header ul{
-    list-style-type: none;
-    padding: 10px;
-    font-size: 18px;
-    overflow: hidden;
+.menu-bar ul li
+{
+    width: 145px;
+    margin: 15px;
+    padding: 15px;
 }
-.header ul li{
-    float: right;
-}
-.header ul li a{
+.menu-bar ul li a
+{
     text-decoration: none;
-    padding: 10px;
-    margin: 10px;
-    display: block;
-} 
-.footer{
-    text-align: center;
-    background-color:white;
-	position: fixed;
-    padding: 10px 10px 0px 10px;
-    bottom: 0;
-    width: 100%;
-    /* Height of the footer*/ 
-   /* height: 40px;
+    color: #fff;
 }
-
-
-
-.grid-container {
-    display: grid;
-    grid-template-columns: 300px auto;
-    grid-gap: 10px;
-    /*background-color: #2196F3;*/
-   /* padding: 10px;
-  }
-
-.body{  
-    height: 800px;
+.active, .menu-bar ul li:hover
+{
+    background:rgb(165, 170, 165);
+    border-radius: 3px;
 }
-.sidebar{
-    margin-top: 0px;
-    width: 20px;
-    height: 100%;
-    background-color: rgb(155, 157, 161);
+.menu-bar .fa
+{
+    margin-right: 8px;
 }
-.sidebar ul{
-    list-style-type: none;
-    padding: 10px;
-    font-size: 18px;
-}
-.sidebar ul li a{
-    text-decoration: none;
-    padding: 10px;
-    margin: 10px;
-    display: block;
-}
- ul li ul{
-    position: absolute;
+.sub-menu-1
+{
     display: none;
 }
-.header{
-    margin-top: 0px;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(155, 157, 161);
+.menu-bar ul li:hover .sub-menu-1
+{
+    display: block;
+    position: absolute;
+    background-color: rgb(165, 170, 165);
+    margin-top: 15px;
+    margin-left: -15;
+}
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+    display: block;
+    margin: 10px;
 
 }
-.header ul{
-    list-style-type: none;
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+    width: 150px;
     padding: 10px;
-    font-size: 18px;
-    overflow: hidden;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
 }
-.header ul li{
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child
+{
+    border-bottom: none;
+
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover
+{
+    color: rgb(165, 170, 165);
+}
+.fa-angle-right
+{
     float: right;
 }
-.header ul li a{
-    text-decoration: none;
-    padding: 10px;
-    margin: 10px;
+.sub-menu-2
+{
+    display: none;
+
+}
+.hover-me:hover .sub-menu-2
+{
+    position: absolute;
     display: block;
-} 
-.footer{
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(155, 157, 161);
-}*/
-/*----------------------Navigation var 2-----------------------------*/
-
-
+    margin-top: -40px;
+    margin-left: 140px;
+    background: rgb(165, 170, 165);
+}
 
 /*---Appointment form css---*/
 
@@ -122,12 +120,10 @@
     background-color: lightgray;
 }
 /* -----------Edit Appointment------------------*/
-
-
   
-  * {
-    box-sizing: border-box;
-  }
+ 
+
+
   
   td.example input[type=text] {
     padding: 40px;
@@ -138,7 +134,7 @@
     background: #f1f1f1;
   }
   
-  td.example button {
+ /* td.example button {
    
     width: 20%;
     padding: 40px;
@@ -149,7 +145,7 @@
     border-left: none;
     cursor: pointer;
   }
-  
+  */
   
 
 /*login form */
@@ -214,4 +210,5 @@
     margin-right: 40%; 
 }
 
+ /* --------------------The Modal (background)------------------------------ */
  

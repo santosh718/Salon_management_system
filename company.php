@@ -18,6 +18,10 @@ if ($result->num_rows > 0) {
     $cid = "C0001";
 }
 $con->close();
+
+
+
+
 ?>
 
 <html>

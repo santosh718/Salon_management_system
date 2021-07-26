@@ -1,25 +1,33 @@
-<?php
-    include 'Common.php';
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="Style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div>
-     <?php include 'MenuBar.php'?>    
+        <?php include 'MenuBar.php'?>
     </div>
-    <div>
-        <form action="CustomerConnect.php" method="post">
+<div>
+        <form >
         <h1>Customer</h1>
+            
             <table>
             
                     <tr>
-                        <td><input type="text" name="TextName" class="button" id="TextName" ></td>
+                    <td  action="/action_page.php" style="margin:auto;max-width:300px">
+                                <input type="search" placeholder="Search.." name="search_value" list="Searchid">
+                                <datalist id="Searchid">
+                                   
+                                </datalist>
+                                <button type="submit" ><i class="fa fa-search"></i></button>
+                               
+                            </td>
                     </tr>
                 </table>
                 <table>
@@ -28,7 +36,7 @@
                         <th class="th">Date</th>
                     </tr>
                     <tr>
-                        <td><input type="text" name="Customer" id="Customer" class="input" value="<?php echo generate_customer_id(); ?>"></td>
+                        <td><input type="text" name="Customer" id="Customer" class="input"></td>
                         <td><input type="date" name="Date" id="Date" class="input"></td>
                     </tr>
                     <tr>
@@ -96,6 +104,5 @@
             </table>
         </form>
     </div>
-    
 </body>
 </html>
